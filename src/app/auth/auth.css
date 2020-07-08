@@ -1,0 +1,47 @@
+
+.login-container{
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+}
+.login-form{
+  height: 500px;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 6% 9%;
+  background: #2d2d2d;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form h2{
+  font-weight: 800;
+  text-align: center;
+  margin-bottom:12%;
+  color:#fff;
+}
+
+.btnSubmit{
+  font-weight: 800;
+  width: 50%;
+  color: #fff;
+  background: #ff7878;
+  border: none;
+  border-radius: 1.5rem;
+  padding:2%;
+}
+.btnForgetPwd{
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+.btnForgetPwd:hover{
+  text-decoration:none;
+  color:#fff;
+}
+
+.ng-valid[required], .ng-valid.required  {
+  border-left: 5px solid #42A948; /* green */
+}
+
+.ng-invalid:not(form)  {
+  border-left: 5px solid #a94442; /* red */
+}

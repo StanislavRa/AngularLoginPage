@@ -1,0 +1,47 @@
+<div class="container login-container">
+  <form #f="ngForm"
+        (ngSubmit)="onSubmit(f)"
+        class="login-form">
+    <h2>SIGN UP</h2>
+    <div class="form-group">
+      <input #login="ngModel"
+             class="form-control"
+             id="login"
+             name="login"
+             ngModel
+             placeholder="New Login"
+             required
+             type="text"/>
+    </div>
+    <div class="form-group">
+      <input #email="ngModel"
+             class="form-control"
+             id="email"
+             name="email"
+             ngModel
+             placeholder="New Email"
+             required
+             type="email"/>
+    </div>
+    <div class="form-group">
+      <input #password="ngModel"
+             class="form-control"
+             id="password"
+             name="password"
+             ngModel
+             placeholder="New Password *"
+             required
+             type="password"/>
+    </div>
+    <div class="form-group">
+      <input type="submit"
+             [disabled]="f.invalid"
+             class="btnSubmit"
+             value="Register"/>
+    </div>
+    <div class="form-group">
+      <a [routerLink]="['/login']"
+         class="btnForgetPwd">Already Registered?</a>
+    </div>
+  </form>
+</div>

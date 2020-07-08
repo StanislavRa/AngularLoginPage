@@ -1,0 +1,38 @@
+<div class="container login-container">
+
+  <form #f="ngForm"
+        (ngSubmit)="onSubmit(f)"
+        class="login-form">
+    <h2>SIGN IN</h2>
+    <div class="form-group">
+      <input #login="ngModel"
+             class="form-control"
+             id="login"
+             name="login"
+             ngModel
+             placeholder="Your Login"
+             required
+             type="text"/>
+    </div>
+    <div class="form-group">
+      <input #password="ngModel"
+             class="form-control"
+             id="password"
+             name="password"
+             ngModel
+             placeholder="Your Password *"
+             required
+             type="password"/>
+    </div>
+    <div class="form-group">
+      <input type="submit"
+             [disabled]="f.invalid"
+             class="btnSubmit"
+             value="Login"/>
+    </div>
+    <div class="form-group">
+      <a [routerLink]="['/reset-password']"
+         class="btnForgetPwd">Forget Password?</a>
+    </div>
+  </form>
+</div>

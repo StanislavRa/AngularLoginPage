@@ -1,0 +1,27 @@
+<div class = "navbar navbar-inverse navbar-fixed-top">
+  <div class = "container">
+    <div class = "navbar-header">
+      <button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = ".navbar-collapse">
+        <span class = "icon-bar"></span>
+        <span class = "icon-bar"></span>
+        <span class = "icon-bar"></span>
+      </button>
+      <a class = "navbar-brand" href = "#">STAN RA</a>
+    </div>
+    <div class = "navbar-collapse collapse">
+      <ul class = "nav navbar-nav navbar-right">
+        <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a routerLink = "">Home</a></li>
+        <li [routerLinkActive]="['active']"><a routerLink = "/login">Login</a></li>
+        <li [routerLinkActive]="['active']"><a routerLink = "/register">Register</a></li>
+        <li [routerLinkActive]="['active']"><a routerLink = "/reset-password">Change Password</a></li>
+        <li [routerLinkActive]="['active']"><a routerLink = "/profile">Profile</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<h3>Select an option</h3>
+<nav>
+  <a routerLink = "/login"> <span>Login</span> </a>
+  <a routerLink = "/register"> <span>Register</span> </a>
+  <a routerLink = "/profile"> <span>Profile</span> </a>
+</nav>
